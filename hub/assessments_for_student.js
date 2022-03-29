@@ -5,7 +5,7 @@ import {
   StudentHeaders,
   Check,
   Options
-} from './utils/common.js';
+} from '../utils/common.js';
 
 export const options = Options;
 export default function main() {

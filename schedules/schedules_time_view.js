@@ -15,7 +15,7 @@ export default function main() {
 
 export  function schedulesTimeView() {
   var url = `${env.Loadtest_URL}/v1/schedules_time_view/list?org_id=${env.ORG_ID}`;
-  console.log(url);
+  // console.log(url);
   let data = {
     "view_type": "full_view",
     "time_at": 0,
