@@ -15,7 +15,11 @@ export default function main() {
 
 export  function schedulesTimeView() {
   var url = `${env.Loadtest_URL}/v1/schedules_time_view/list?org_id=${env.ORG_ID}`;
+<<<<<<< Updated upstream
   // console.log(url);
+=======
+//  console.log(url);
+>>>>>>> Stashed changes
   let data = {
     "view_type": "full_view",
     "time_at": 0,
