@@ -11,17 +11,12 @@ import {
 export const options = Options;
 
 export default function main() {
-  const response = studentsAchievementOverview();
+  const response = learnerWeeklyOverview();
   return response;
 }
 
-export function studentsAchievementOverview(){
+export function learnerWeeklyOverview(){
   var url = `${env.Loadtest_URL}/v1/reports/learner_weekly_overview?time_range=${dateTimestamp(7)}-${env.S_TIME_STAMP}&org_id=${env.ORG_ID}`;
-
-  console.log(url);
-
   let res = http.get(url, defaultHeaders);
-
   Check(res);
-  console.log(res.body);
 }

@@ -47,14 +47,22 @@ function batchCheck(res, expectedStatus = 200) {
 
 export const Check = batchCheck;
 
+//n days ago
 export function dateTimestamp(n){
   var d = new Date();
   d.setDate(d.getDate() - n);
-  var dd = new Date(d.getFullYear(), d.getMonth(), d.getDay(), 0, 0, 0, 0);
+  var dd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0);
   var ts = Math.round(dd/1000);
   return ts;
 }
-
+//n months ago
+export function monthsTimestamp(n){
+  var d = new Date();
+  d.setMonth(d.getMonth() -n );
+  var dd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0);
+  var ts = Math.round(dd/1000);
+  return ts;
+}
 
 
 

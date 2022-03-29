@@ -29,9 +29,7 @@ export function learnerUsage(){
         "document"
     ]
   }
-//  console.log(JSON.stringify(data))
+  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);
-
   Check(res);
-  console.log(res.body);
 }
