@@ -15,11 +15,7 @@ export default function main() {
 
 export  function schedulesFilter() {
   var url = `${env.Loadtest_URL}/v1/schedules_filter/programs?org_id=${env.ORG_ID}`;
-<<<<<<< Updated upstream
-  // console.log(url);
-=======
 //  console.log(url);
->>>>>>> Stashed changes
   let res = http.get(url, defaultHeaders);
   Check(res);
 
