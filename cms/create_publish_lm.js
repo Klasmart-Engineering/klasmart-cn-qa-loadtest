@@ -12,7 +12,11 @@ import { createSaveLm } from './create_save_lm.js';
 export const options = Options;
 
 export default function main() {
+  const response = createPublishLm();
+  return response;
+}
 
+export function createPublishLm() {
   let content_id = createSaveLm();
 //  console.log(content_id);
   let url = `${env.Loadtest_URL}/v1/contents/${content_id}/publish?org_id=${env.ORG_ID}`;
@@ -27,8 +31,4 @@ export default function main() {
 //  console.log(res.body);
 
   Check(res);
-
-//  console.log(res.status);
-//  console.log(res.body);
-
 }

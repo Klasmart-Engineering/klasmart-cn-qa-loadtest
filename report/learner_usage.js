@@ -11,8 +11,12 @@ import {
 export const options = Options;
 
 export default function main() {
-  var url = `${env.Loadtest_URL}/v1/reports/learner_usage/overview?org_id=${env.ORG_ID}`;
+  const response = learnerUsage();
+  return response;
+}
 
+export function learnerUsage(){
+  var url = `${env.Loadtest_URL}/v1/reports/learner_usage/overview?org_id=${env.ORG_ID}`;
   let data = {
     "durations": [
         dateTimestamp(7) + '-' + env.S_TIME_STAMP
@@ -24,16 +28,10 @@ export default function main() {
         "audio",
         "document"
     ]
-}
-  console.log(JSON.stringify(data))
-
+  }
+//  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);
-//  console.log(res.json().id);
-  return res.json().id;
 
   Check(res);
-
-//  console.log(res.status);
-//  console.log(res.body);
-//  sleep (1)
+  console.log(res.body);
 }
