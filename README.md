@@ -1,2 +1,3 @@
 # cn-qa-loadtest
- bash run.sh  get the report
+need a folder name output
+bash run.sh  get the report
