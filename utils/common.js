@@ -20,6 +20,15 @@ export const StudentHeaders = {
     },
   };
 
+//alpha token  alphaHeaders
+export const alphaHeaders = {
+    headers: {
+      'Content-Type': 'application/json',
+      cookie:
+          'access=eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6MTY0ODcxNDQyNywiaXNzIjoia2lkc2xvb3AifQ.MoB3mBw0Hj0Yu1_XcVbTtD9Caq_YSaQE2-2FsYglXpn-dgZVmi6GCJ7qbL1kx45J1vqmH2S2B45HGjX_jZswlowF7ieGIX4uhcJ3-XAA0VTqVRnDl88w9fPcYn_EMvXLF6ciY-9nxnt9FrY5RYbXgWEHb7T1oVFAjmh7HhZAQUXP4MLb-G-x1tLAI7UJbaCb99ASM76vfi7Kdg674KTmuxzkBKHmNnL2O9zpTYDMLW20xAqLlGkuiXd7a-DQK5m-HrzomuH-bM_fZXgosuPhYa3VZaZ2_RS7Pvs0ezbzsT_8L4ioPDEwSy9gAQ6xxppGLA37g_Q5Tj_3ZkltA-VoEg'
+    },
+  };
+
 export const Options = {
   stages: [
     { duration: '2s', target: 1 },

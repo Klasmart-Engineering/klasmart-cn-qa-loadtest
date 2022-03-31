@@ -1,0 +1,41 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./report/students_achievement_overview.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 32s max duration (incl. graceful stop):
+           * default: Up to 1 looping VUs for 2s over 1 stages (gracefulRampDown: 30s, gracefulStop: 30s)
+
+
+running (01.0s), 1/1 VUs, 17 complete and 0 interrupted iterations
+default   [  50% ] 1/1 VUs  1.0s/2.0s
+
+running (02.0s), 1/1 VUs, 38 complete and 0 interrupted iterations
+default   [ 100% ] 1/1 VUs  2.0s/2.0s
+
+running (02.0s), 0/1 VUs, 39 complete and 0 interrupted iterations
+default ✓ [ 100% ] 0/1 VUs  2s
+
+     data_received..................: 21 kB  10 kB/s
+     data_sent......................: 2.5 kB 1.2 kB/s
+     http_req_blocked...............: avg=4.51ms   min=0s      med=0s      max=175.95ms p(90)=1µs     p(95)=1µs     
+     http_req_connecting............: avg=163.53µs min=0s      med=0s      max=6.37ms   p(90)=0s      p(95)=0s      
+   ✓ http_req_duration..............: avg=47.2ms   min=37.31ms med=39.64ms max=128.92ms p(90)=58.85ms p(95)=93.36ms 
+       { expected_response:true }...: avg=47.2ms   min=37.31ms med=39.64ms max=128.92ms p(90)=58.85ms p(95)=93.36ms 
+   ✓ http_req_failed................: 0.00%  ✓ 0         ✗ 39 
+     http_req_receiving.............: avg=62.84µs  min=40µs    med=58µs    max=145µs    p(90)=82.2µs  p(95)=91.7µs  
+     http_req_sending...............: avg=74.23µs  min=43µs    med=58µs    max=409µs    p(90)=89µs    p(95)=144.8µs 
+     http_req_tls_handshaking.......: avg=4.29ms   min=0s      med=0s      max=167.6ms  p(90)=0s      p(95)=0s      
+     http_req_waiting...............: avg=47.06ms  min=37.21ms med=39.53ms max=128.84ms p(90)=58.45ms p(95)=93.23ms 
+     http_reqs......................: 39     19.216215/s
+     iteration_duration.............: avg=51.99ms  min=37.48ms med=39.97ms max=227.89ms p(90)=88.26ms p(95)=114.18ms
+     iterations.....................: 39     19.216215/s
+     vus............................: 1      min=1       max=1
+     vus_max........................: 1      min=1       max=1
+
