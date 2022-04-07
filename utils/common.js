@@ -31,9 +31,9 @@ export const alphaHeaders = {
 
 export const Options = {
   stages: [
-    { duration: '2s', target: 1 },
-//    { duration: '2m', target: 500 },
-//    { duration: '1m', target: 800 },
+    { duration: '1m', target: 500 },
+    { duration: '2m', target: 1000 },
+    { duration: '2m', target: 1000 },
   ],
   thresholds: {
     http_req_failed: ['rate<0.02'], // http errors should be less than 2%
