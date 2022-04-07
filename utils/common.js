@@ -8,7 +8,12 @@ import { check } from 'k6';
     headers: {
       'Content-Type': 'application/json',
       cookie:
+<<<<<<< Updated upstream
           'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.qVfuPzeQFKvHlOg3aPh45rQ878LrGif5I3yb3eZj7Z8',
+=======
+          'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.qVfuPzeQFKvHlOg3aPh45rQ878LrGif5I3yb3eZj7Z8'
+//          'access=eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImlzcyI6ImtpZHNsb29wIiwiZXhwIjoyNjQ2MDI4NjMzfQ.raNvDa8GkZTUEIZrswL9UxrLWTbO-YnjQsLoMiXL-Qh5198RXoS4UZPGkMCOjjwZzQ0AVnspg26V10CZBewZUl1_dFOKQuouX_2tQd5h_ZPY8vPz-4sKw1UTgGmNVv3g90M-oVrQnxxytAQ_gQtbPc1zEqz2B0d1TpEH-rG2UoB3J4V4jG8a1Kj5AMEyWHdZkjoz0fdypbDGw4G_B8SqJgz7J5CdbFJa2bXLk24qmmWyzJcj5CVBnuUeabiZkely3ybAUselLqaMJ8KpY9m58MYkVcPH9llyQNZq5UrlpeHxPAjYdZaif97fLtf7V20DmiIGOxXN-Dv2_t2XNcDr7Q',
+>>>>>>> Stashed changes
     },
   };
 
@@ -16,16 +21,12 @@ export const StudentHeaders = {
     headers: {
       'Content-Type': 'application/json',
       cookie:
+<<<<<<< Updated upstream
           'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzYTgwNGQ3LWZiYmMtNGI2OS1hNzkzLWVhZmRkMTI3MjUwZCIsImVtYWlsIjoic3R1MTIyMWFAeW9wbWFpbC5jb20iLCJleHAiOjI3NDg3MjA3MDEsImlzcyI6ImNhbG1pZC1kZWJ1ZyJ9.M-0-kILlrkm7ApV9k4xMeBm0C-w-_JtGVtmPEOTHeOs',
-    },
-  };
-
-//alpha token  alphaHeaders
-export const alphaHeaders = {
-    headers: {
-      'Content-Type': 'application/json',
-      cookie:
-          'access=eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6MTY0ODcxNDQyNywiaXNzIjoia2lkc2xvb3AifQ.MoB3mBw0Hj0Yu1_XcVbTtD9Caq_YSaQE2-2FsYglXpn-dgZVmi6GCJ7qbL1kx45J1vqmH2S2B45HGjX_jZswlowF7ieGIX4uhcJ3-XAA0VTqVRnDl88w9fPcYn_EMvXLF6ciY-9nxnt9FrY5RYbXgWEHb7T1oVFAjmh7HhZAQUXP4MLb-G-x1tLAI7UJbaCb99ASM76vfi7Kdg674KTmuxzkBKHmNnL2O9zpTYDMLW20xAqLlGkuiXd7a-DQK5m-HrzomuH-bM_fZXgosuPhYa3VZaZ2_RS7Pvs0ezbzsT_8L4ioPDEwSy9gAQ6xxppGLA37g_Q5Tj_3ZkltA-VoEg'
+=======
+//          'access=',
+          'access=eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzYTgwNGQ3LWZiYmMtNGI2OS1hNzkzLWVhZmRkMTI3MjUwZCIsImVtYWlsIjoic3R1MTIyMWFAeW9wbWFpbC5jb20iLCJpc3MiOiJraWRzbG9vcCIsImV4cCI6MjY0NjAyODYzM30.N-T6PiFC8nQmxWJnSli2-TF9ShNjfZeQ9fZD_qs8ukI12qMuSt9h89q8N7AeXWSx3tV0fmaQOnrP0DxNRZr370NuQY_ffnuXVgN_TZffhZff2j0-XDexg46S_N6Yxr4oGcuhw2bQJayxiQHRq8r_0VmgMdJ_its3JI4y8ixgk5Dw47_lerFw-Rs28On_RE-6NcHA5xKWqFIixetzUEr4HUZ1j7yGgB7GKw6lCjrTnvbszk8ls21aIm9MXbgdIFWQuzU8NU62p86PwC_J3ht8MEAZgp05IQ1wPeXSzjT8h1ybbw9M2WEEhmbE6ntlsDAr4CuEnopkGTTvbEnEcqiKsA',
+>>>>>>> Stashed changes
     },
   };
 

@@ -24,6 +24,6 @@ export function students(){
   let res = http.get(url, defaultHeaders);
 
   Check(res);
-//  console.log(res.json().id);
-  console.log(res.body);
+//  console.log(res.body);
 }
+
