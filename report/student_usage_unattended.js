@@ -16,7 +16,9 @@ export default function main() {
 }
 
 export function studentUsageUnattended(){
-  var url = `${env.Loadtest_URL}/v1/reports/student_usage/classes_assignments/bae3617d-8bbc-4253-b397-1d597340c7b9/unattende?org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/reports/student_usage/classes_assignments/896e7727-69ad-4da7-9643-cc8064d45701/unattended?org_id=${env.ORG_ID}`;
+//  console.log(url);
+
   let data = {
     // type: live, study, home_fun
       "type": "live",
@@ -25,10 +27,12 @@ export function studentUsageUnattended(){
         dateTimestamp(14) + '-' + dateTimestamp(7),
         dateTimestamp(7) + '-' + env.S_TIME_STAMP
       ]
-    }
-
+  }
 //  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);
   Check(res);
 //  console.log(res.body);
 }
+
+
+

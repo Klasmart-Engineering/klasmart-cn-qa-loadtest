@@ -22,6 +22,7 @@ export const StudentHeaders = {
 
 export const Options = {
   stages: [
+//    { duration: '5s', target: 1 },
     { duration: '1m', target: 500 },
     { duration: '2m', target: 1000 },
     { duration: '2m', target: 1000 },
