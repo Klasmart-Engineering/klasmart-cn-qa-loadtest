@@ -46,7 +46,7 @@ export function learnOutcomeAchievement(){
     "student_id": "537e703d-4b53-4159-b504-65e8c4f45c98",
     "un_selected_subject_id_list": []
   }
-  console.log(JSON.stringify(data))
+//  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);
   Check(res);
 //  console.log(res.body);
