@@ -18,11 +18,12 @@ export default function main() {
 
 export function contentsApprove() {
   let content_id = contentsPending();
-  console.log(content_id);
+//  console.log(content_id);
   let url = `${env.Loadtest_URL}/v1/contents/${content_id}/review/approve?org_id=${env.ORG_ID}`;
-  console.log(url)
-
-  let res = http.put(url, defaultHeaders);
-  console.log(res.body);
+//  console.log(url)
+   let data = {
+    }
+  let res = http.put(url, JSON.stringify(data), defaultHeaders);
+//  console.log(res.body);
   Check(res);
 }

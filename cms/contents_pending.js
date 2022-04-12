@@ -4,7 +4,8 @@ import * as env from '../utils/env.js';
 import {
   defaultHeaders,
   Check,
-  Options
+  Options,
+  random
 } from '../utils/common.js';
 
 export const options = Options;
@@ -21,7 +22,5 @@ export function contentsPending(){
 
   let res = http.get(url, defaultHeaders);
   Check(res);
-//  console.log(res.body);
-//  console.log(res.json().list[0].id);
   return res.json().list[0].id;
 }
