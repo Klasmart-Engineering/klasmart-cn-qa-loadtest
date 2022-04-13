@@ -7,7 +7,8 @@ import {
   Options
 } from '../utils/common.js';
 
-import { contentsPending } from './contents_pending.js';
+//import { contentsPending } from './contents_pending.js';
+import { createPublishLm } from './create_publish_lm.js';
 
 export const options = Options;
 
@@ -17,10 +18,11 @@ export default function main() {
 }
 
 export function contentsApprove() {
-  let content_id = contentsPending();
+//  let content_id = contentsPending();
+  let content_id = createPublishLm();
 //  console.log(content_id);
   let url = `${env.Loadtest_URL}/v1/contents/${content_id}/review/approve?org_id=${env.ORG_ID}`;
-//  console.log(url)
+//  console.log(url);
    let data = {
     }
   let res = http.put(url, JSON.stringify(data), defaultHeaders);

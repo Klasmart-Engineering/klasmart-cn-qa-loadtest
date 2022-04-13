@@ -31,4 +31,5 @@ export function createPublishLm() {
 //  console.log(res.body);
 
   Check(res);
+  return content_id;
 }
