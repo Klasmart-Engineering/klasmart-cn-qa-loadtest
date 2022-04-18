@@ -15,6 +15,7 @@ export default function main() {
   return response;
 
 }
+// remove to archive
 export function contentRemoveToArchive(){
   let content_id = publishLmList();
   let url = `${env.Loadtest_URL}/v1/contents/${content_id}?org_id=${env.ORG_ID}`;
