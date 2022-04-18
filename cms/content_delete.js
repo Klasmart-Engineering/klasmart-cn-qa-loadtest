@@ -6,21 +6,22 @@ import {
   Check,
   Options
 } from '../utils/common.js';
-import { contentsArchiveList } from './contents_archive_list.js';
+import { publishLmList } from './contents_folders_lm_list.js';
 export const options = Options;
 
 export default function main() {
 
-  const response = contentDelete();
+  const response = contentRemoveToArchive();
   return response;
 
 }
-export function contentDelete(){
-  let content_id = contentsArchiveList();
+export function contentRemoveToArchive(){
+  let content_id = publishLmList();
   let url = `${env.Loadtest_URL}/v1/contents/${content_id}?org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let res = http.del(url, null, defaultHeaders);
   Check(res);
 //  console.log(res.body);
+  return content_id;
 }
