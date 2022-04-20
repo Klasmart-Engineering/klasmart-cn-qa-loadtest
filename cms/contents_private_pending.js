@@ -18,7 +18,7 @@ export default function main() {
 }
 export function contentsPrivatePending(){
   let url = `${env.Loadtest_URL}/v1/contents_private?publish_status=pending&submenu=wfa&author=%7Bself%7D&content_type=1%2C2%2C10&order_by=-update_at&page=1&page_size=20&org_id=${env.ORG_ID}`;
-  console.log(url);
+//  console.log(url);
 
   let res = http.get(url, defaultHeaders);
   Check(res);

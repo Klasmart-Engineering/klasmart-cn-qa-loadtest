@@ -26,4 +26,3 @@ export function students(){
   Check(res);
 //  console.log(res.body);
 }
-

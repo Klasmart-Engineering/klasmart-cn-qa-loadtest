@@ -17,7 +17,7 @@ export default function main() {
 
 export function liveClasses(){
 
-  var url = `${env.Loadtest_URL}/v1/reports/learning_summary_v2/live_classes?year=2022&week_start=${dateTimestamp(14)}&week_end=${dateTimestamp(7)}&school_id=&class_id=&student_id=cc9f16f5-bf27-484a-a397-c93029bcdae7&subject_id=&org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/reports/learning_summary/live_classes_v2?year=2022&week_start=1649606400&week_end=1650211200&school_id=&class_id=&student_id=cc9f16f5-bf27-484a-a397-c93029bcdae7&subject_id=&org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let res = http.get(url, defaultHeaders);
@@ -25,3 +25,4 @@ export function liveClasses(){
   Check(res);
 //  console.log(res.body);
 }
+

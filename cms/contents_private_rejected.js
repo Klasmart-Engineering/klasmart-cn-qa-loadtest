@@ -22,6 +22,6 @@ export function contentsPrivateRejected(){
 
   let res = http.get(url, defaultHeaders);
   Check(res);
-  console.log(res.body);
+//  console.log(res.body);
 //  return res.json().list[0].id;
 }

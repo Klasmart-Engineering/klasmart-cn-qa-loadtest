@@ -16,13 +16,12 @@ export default function main() {
 
 }
 export function contentsAuthed(){
-//  program_group: BadaESL /BadaSTEAM /More
   let url = `${env.Loadtest_URL}/v1/contents_authed?submenu=more+featured&program_group=More+Featured+Content&order_by=-update_at&page=1&page_size=20&org_id=${env.ORG_ID}`
 //  console.log(url);
 
   let res = http.get(url, defaultHeaders);
   Check(res);
-  console.log(res.body);
+//  console.log(res.body);
 //  console.log(res.json().list[0].id);
 }
 

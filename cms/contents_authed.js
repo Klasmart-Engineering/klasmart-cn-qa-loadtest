@@ -22,7 +22,7 @@ export function contentsAuthed(){
 
   let res = http.get(url, defaultHeaders);
   Check(res);
-  console.log(res.body);
+//  console.log(res.body);
 //  console.log(res.json().list[0].id);
 }
 
