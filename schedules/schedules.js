@@ -23,7 +23,7 @@ export  function schedules() {
     "description":"24234",
     "due_at":0,
     "is_all_day":true,
-    "is_force":false,
+    "is_force":true,
     "is_repeat":false,
     "lesson_plan_id":"60a316cc03b03c3acdb54b54",
     "program_id":"14d350f1-a7ba-4f46-bef9-dc847f0cbac5",
@@ -66,7 +66,7 @@ export  function schedules() {
     }
 
   let res = http.post(url, JSON.stringify(data), defaultHeaders);
-  console.log(res.body);
+  // console.log(res.body);
   Check(res);
 
 }
