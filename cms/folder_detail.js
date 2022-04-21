@@ -20,7 +20,6 @@ export function folderDetail(){
   let folder_id = folderList();
   let url = `${env.Loadtest_URL}/v1/folders/items/details/${folder_id}?org_id=${env.ORG_ID}`;
 //  console.log(url);
-
   let res = http.get(url, defaultHeaders);
   Check(res);
 //  console.log(res.body);
