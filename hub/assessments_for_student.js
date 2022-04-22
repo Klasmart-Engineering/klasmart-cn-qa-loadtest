@@ -19,4 +19,5 @@ export  function assessmentsForStudent() {
   let res = http.get(url, StudentHeaders);
 //  console.log(res.status);
   Check(res);
+  console.log(res.body);
 }

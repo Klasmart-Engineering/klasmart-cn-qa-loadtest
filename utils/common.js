@@ -16,7 +16,7 @@ export const StudentHeaders = {
     headers: {
       'Content-Type': 'application/json',
       cookie:
-          'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzYTgwNGQ3LWZiYmMtNGI2OS1hNzkzLWVhZmRkMTI3MjUwZCIsImVtYWlsIjoic3R1MTIyMWFAeW9wbWFpbC5jb20iLCJleHAiOjI3NDg3MjA3MDEsImlzcyI6ImNhbG1pZC1kZWJ1ZyJ9.M-0-kILlrkm7ApV9k4xMeBm0C-w-_JtGVtmPEOTHeOs',
+      'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlYTBlNDk0LWU1NmYtNDE3ZS05OWE3LTgxNzc0Yzg3OWJmOCIsImVtYWlsIjoic3R1MDJfMDAxQHlvcG1haWwuY29tIiwiZXhwIjoyNzQ4NzIwNzAxLCJpc3MiOiJjYWxtaWQtZGVidWcifQ.muj4OrqbSk72xeNvKr4wyzo8CRQH70FSSVoO9romy0s',
     },
 };
 
