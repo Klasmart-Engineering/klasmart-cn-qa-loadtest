@@ -2,7 +2,7 @@ import { sleep } from 'k6';
 import http from 'k6/http';
 import * as env from '../utils/env.js';
 import {
-  defaultHeaders,
+  StudentHeaders,
   Check,
   Options
 } from '../utils/common.js';
@@ -14,9 +14,9 @@ export default function main() {
 };
 
 export  function schedulesFilter() {
-  var url = `${env.Loadtest_URL}/v1/schedules_filter/programs?org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/schedules_filter/programs?org_id=${env.STU_ORG_ID}`;
 //  console.log(url);
-  let res = http.get(url, defaultHeaders);
+  let res = http.get(url, StudentHeaders);
   Check(res);
 
 }

@@ -18,5 +18,5 @@ export  function assessments_live() {
   // console.log(url);
   let res = http.get(url, defaultHeaders);
   Check(res);
-  // console.log(res.body);
+   console.log(res.body);
 }

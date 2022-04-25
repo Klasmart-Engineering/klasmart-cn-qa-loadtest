@@ -28,5 +28,5 @@ export  function schedulesTimeViewStudent() {
   let res = http.post(url, JSON.stringify(data), StudentHeaders);
 //  console.log(res.status);
   Check(res);
-
+ // console.log(res.body);
 }
