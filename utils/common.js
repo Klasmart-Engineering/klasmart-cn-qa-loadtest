@@ -3,7 +3,7 @@ import { Counter } from 'k6/metrics';
 import * as env from './env.js';
 import { check } from 'k6';
 
-
+//all1124@yopmail.com
 export const defaultHeaders = {
     headers: {
       'Content-Type': 'application/json',
@@ -13,11 +13,21 @@ export const defaultHeaders = {
     },
 };
 
+//stu02_001@yopmail.com
 export const StudentHeaders = {
     headers: {
       'Content-Type': 'application/json',
       cookie:
       'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlYTBlNDk0LWU1NmYtNDE3ZS05OWE3LTgxNzc0Yzg3OWJmOCIsImVtYWlsIjoic3R1MDJfMDAxQHlvcG1haWwuY29tIiwiZXhwIjoyNzQ4NzIwNzAxLCJpc3MiOiJjYWxtaWQtZGVidWcifQ.muj4OrqbSk72xeNvKr4wyzo8CRQH70FSSVoO9romy0s',
+    },
+};
+
+//student112301@yopmail.com
+export const orgHeaders = {
+    headers: {
+      'Content-Type': 'application/json',
+      cookie:
+          'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4NDJiMmVjLWI5MDMtNDZjNi1iMDYyLTA1OTIwYTNiN2Y3OSIsImVtYWlsIjoic3R1ZGVudDExMjMwMUB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.hGq0BzRa3iV1vZESYlLaxbEBl1MmoAc-AjSZkyrJB1s',
     },
 };
 
