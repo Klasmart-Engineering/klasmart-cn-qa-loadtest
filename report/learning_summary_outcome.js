@@ -17,12 +17,12 @@ export default function main() {
 
 export function liveClasses(){
 
-  var url = `${env.Loadtest_URL}/v1/reports/learning_summary/live_classes_v2?year=2022&week_start=1642953600&week_end=1643558400&school_id=&class_id=&student_id=537e703d-4b53-4159-b504-65e8c4f45c98&subject_id=&org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/reports/learning_summary/outcomes?assessment_id=61f39c4fda9f846f258c3923&student_id=537e703d-4b53-4159-b504-65e8c4f45c98&org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let res = http.get(url, defaultHeaders);
 
   Check(res);
-  console.log(res.body);
+//  console.log(res.body);
 }
 
