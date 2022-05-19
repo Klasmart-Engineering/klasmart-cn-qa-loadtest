@@ -16,22 +16,23 @@ export default function main() {
 }
 
 export function studentUsageUnattended(){
-  var url = `${env.Loadtest_URL}/v1/reports/student_usage/classes_assignments/896e7727-69ad-4da7-9643-cc8064d45701/unattended?org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/reports/student_usage/classes_assignments/facc1eaa-0f7c-4f97-9346-3fd945a7d4f4/unattended?org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let data = {
-    // type: live, study, home_fun
-      "type": "live",
-      "durations": [
-        dateTimestamp(21) + '-' + dateTimestamp(14),
-        dateTimestamp(14) + '-' + dateTimestamp(7),
-        dateTimestamp(7) + '-' + env.S_TIME_STAMP
-      ]
-  }
+  "type": "live",
+  "durations": [
+//    dateTimestamp(21) + '-' + dateTimestamp(14),
+    "1646064000-1648742400",
+    "1648742400-1651334400",
+    "1651334400-1652954818"
+  ]
+}
+
 //  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);
   Check(res);
-//  console.log(res.body);
+  console.log(res.body);
 }
 
 

@@ -18,7 +18,7 @@ export default function main() {
 
 export function schedulesLessonPlans(){
 
-  var url = `${env.Loadtest_URL}/v1/schedules_lesson_plans?teacher_id=2b6f5510-0342-471c-8aea-92291f66610b&class_id=bae3617d-8bbc-4253-b397-1d597340c7b9&org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/schedules_lesson_plans?teacher_id=17a28338-3b88-4bac-ab15-cce3887af357&class_id=facc1eaa-0f7c-4f97-9346-3fd945a7d4f4&org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let res = http.get(url, defaultHeaders);

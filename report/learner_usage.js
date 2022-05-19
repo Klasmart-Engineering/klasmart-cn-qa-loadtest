@@ -19,7 +19,8 @@ export function learnerUsage(){
   var url = `${env.Loadtest_URL}/v1/reports/learner_usage/overview?org_id=${env.ORG_ID}`;
   let data = {
     "durations": [
-        dateTimestamp(7) + '-' + env.S_TIME_STAMP
+//        dateTimestamp(70) + '-' + env.S_TIME_STAMP
+        "1646841600-1652948905"
     ],
     "content_type_list": [
         "h5p",

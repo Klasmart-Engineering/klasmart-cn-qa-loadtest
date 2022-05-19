@@ -17,9 +17,11 @@ export default function main() {
 
 export function studentsAchievementOverview(){
 //  var url = `${env.Loadtest_URL}/v1/reports/students_achievement_overview?time_range=${dateTimestamp(7)}-${env.S_TIME_STAMP}&org_id=${env.ORG_ID}`;
-  let range = dateTimestamp(7) + '-' + env.S_TIME_STAMP;
+//  let range = dateTimestamp(70) + '-' + env.S_TIME_STAMP;
+  let range = '1646841600-1652956011';
   var url = `${env.Loadtest_URL}/v1/reports/students_achievement_overview?time_range=${range}&org_id=${env.ORG_ID}`;
-//  console.log(url);
+//  console.log(range);
   let res = http.get(url, defaultHeaders);
   Check(res);
+//  console.log(res.body);
 }

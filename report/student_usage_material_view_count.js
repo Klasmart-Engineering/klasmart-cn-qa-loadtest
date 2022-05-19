@@ -19,17 +19,24 @@ export function materialViewCount(){
   var url = `${env.Loadtest_URL}/v1/reports/student_usage/material_view_count?org_id=${env.ORG_ID}`;
   let data = {
       "class_id_list": [
-        "bae3617d-8bbc-4253-b397-1d597340c7b9",
-        "23dcc986-a7d8-44d2-b7df-496380a6cbac",
-        "5e5d0fd0-83a1-433e-bfe4-43569e5430b7",
-        "41f5cea7-f079-4f57-a40c-4072a786af85",
-        "896e7727-69ad-4da7-9643-cc8064d45701",
-        "9e5d98f4-2bae-4d88-9a29-72b388c9de63",
-        "1b43e5cb-cfb5-4ea0-9672-493db6441643",
-        "a0c27187-ebdc-4543-8b9b-32534b46310e"
+        "9a83bacc-1941-47d9-8161-fda3df039735",
+        "8860789c-d66e-47ff-892c-8577d09ed86d",
+        "2ea4ea0e-8a23-4063-98e8-84cdc30ad80b",
+        "a607c7d9-9775-441d-b671-bffe5dd01639",
+        "d41690f7-8871-46bb-ad92-ba4e6c9f81fa",
+        "facc1eaa-0f7c-4f97-9346-3fd945a7d4f4",
+        "e05187ad-63bf-43a6-9a5c-72f1a64bce01",
+        "110b78e4-9e59-4d4c-89db-73f80fc3aacc",
+        "6770cee0-8c78-4636-a646-22237ba3aefc",
+        "b06119d4-764f-4613-bc4c-ed0a126f5423",
+        "a5e488fd-0b53-4e3a-bdb7-f14641cdba9f",
+        "75e3825f-6674-44be-9ea2-01d6c0197d28",
+        "5870f60a-ea01-476d-98c4-f016124debc8",
+        "98a1d98c-4ee7-4e91-b6fc-78e210998979"
       ],
       "time_range_list": [
-        monthsTimestamp(2) + '-' + env.S_TIME_STAMP
+        "1646064000-1652954265"
+//        monthsTimestamp(2) + '-' + env.S_TIME_STAMP
       ],
       "content_type_list": [
         "h5p",
@@ -38,7 +45,7 @@ export function materialViewCount(){
         "audio",
         "document"
       ]
-  }
+    }
 
 //  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);

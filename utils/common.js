@@ -4,12 +4,21 @@ import * as env from './env.js';
 import { check } from 'k6';
 
 //all1124@yopmail.com
+//export const defaultHeaders = {
+//    headers: {
+//      'Content-Type': 'application/json',
+//      cookie:
+//          'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.qVfuPzeQFKvHlOg3aPh45rQ878LrGif5I3yb3eZj7Z8',
+//          // 'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzMjZhYjZkLWNlYjMtNDg5MS04ZjI5LWU5MzQxOTcxMWY4NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.yDkRHbNCqZ8C_TM9dn1yWy8Dr64MhRcg0iUU2xSdc0c', // teacher
+//    },
+//};
+
+//org1119@yopmail.com  org: air jordan    user_id: afdfc0d9-ada9-4e66-b225-20f956d1a399
 export const defaultHeaders = {
     headers: {
       'Content-Type': 'application/json',
       cookie:
-          'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExZmFhNTc1LWVhMGMtNGEzMC04YmI2LTViYjM3M2MwYjA5NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.qVfuPzeQFKvHlOg3aPh45rQ878LrGif5I3yb3eZj7Z8',
-          // 'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzMjZhYjZkLWNlYjMtNDg5MS04ZjI5LWU5MzQxOTcxMWY4NCIsImVtYWlsIjoiYWxsMTEyNEB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.yDkRHbNCqZ8C_TM9dn1yWy8Dr64MhRcg0iUU2xSdc0c', // teacher
+          'access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFmZGZjMGQ5LWFkYTktNGU2Ni1iMjI1LTIwZjk1NmQxYTM5OSIsImVtYWlsIjoib3JnMTExOUB5b3BtYWlsLmNvbSIsImV4cCI6Mjc0ODcyMDcwMSwiaXNzIjoiY2FsbWlkLWRlYnVnIn0.Y3S-xyEhq221v38Ning97oyRzkSzevC1UTEj9w04f_A',
     },
 };
 

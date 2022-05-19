@@ -18,22 +18,29 @@ export default function main() {
 export function lessonsSummary(){
   var url = `${env.Loadtest_URL}/v1/reports/teaching_loading?org_id=${env.ORG_ID}`;
   let data = {
-      "time_offset": 28800,
-      "teacher_ids": [
-        "2b6f5510-0342-471c-8aea-92291f66610b",
-        "eac9e9b0-bb92-495b-9cc5-c64db10c6ceb",
-        "cc9f16f5-bf27-484a-a397-c93029bcdae7",
-        "a1faa575-ea0c-4a30-8bb6-5bb373c0b094",
-        "97e3f59b-41d4-42a0-af20-663c3cb12c5c"
-      ],
-      "class_ids": [
-        "bae3617d-8bbc-4253-b397-1d597340c7b9",
-        "23dcc986-a7d8-44d2-b7df-496380a6cbac",
-        "896e7727-69ad-4da7-9643-cc8064d45701",
-        "5e5d0fd0-83a1-433e-bfe4-43569e5430b7",
-        "9e5d98f4-2bae-4d88-9a29-72b388c9de63"
-      ]
-  }
+  "time_offset": 28800,
+  "teacher_ids": [
+    "d52ed9a5-d663-4605-be0b-087299d3283c",
+    "8700dfaf-a352-4902-bcb0-e3982c6a12df",
+    "1e200965-df57-461e-8af3-e255886e8e41",
+    "5e284945-5900-4acd-be43-f57dc478e325",
+    "5cd801e4-f657-49c7-9c0a-adabe5d207e7"
+  ],
+  "class_ids": [
+    "5870f60a-ea01-476d-98c4-f016124debc8",
+    "facc1eaa-0f7c-4f97-9346-3fd945a7d4f4",
+    "d41690f7-8871-46bb-ad92-ba4e6c9f81fa",
+    "e05187ad-63bf-43a6-9a5c-72f1a64bce01",
+    "98a1d98c-4ee7-4e91-b6fc-78e210998979",
+    "b06119d4-764f-4613-bc4c-ed0a126f5423",
+    "75e3825f-6674-44be-9ea2-01d6c0197d28",
+    "9a83bacc-1941-47d9-8161-fda3df039735",
+    "a607c7d9-9775-441d-b671-bffe5dd01639",
+    "a5e488fd-0b53-4e3a-bdb7-f14641cdba9f",
+    "8860789c-d66e-47ff-892c-8577d09ed86d"
+  ]
+}
+
 
 //  console.log(JSON.stringify(data))
   let res = http.post(url, JSON.stringify(data), defaultHeaders);

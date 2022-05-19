@@ -17,12 +17,12 @@ export default function main() {
 
 export function liveClasses(){
 
-  var url = `${env.Loadtest_URL}/v1/reports/learning_summary/outcomes?assessment_id=61f39c4fda9f846f258c3923&student_id=537e703d-4b53-4159-b504-65e8c4f45c98&org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/reports/learning_summary/outcomes?assessment_id=62429e007a70b6815f795510&student_id=17a28338-3b88-4bac-ab15-cce3887af357&org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let res = http.get(url, defaultHeaders);
 
   Check(res);
-//  console.log(res.body);
+  console.log(res.body);
 }
 

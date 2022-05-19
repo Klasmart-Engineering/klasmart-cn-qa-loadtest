@@ -16,7 +16,7 @@ export default function main() {
 }
 
 export function skillCoverageReport(){
-  var url = `${env.Loadtest_URL}/v1/reports/teachers/2b6f5510-0342-471c-8aea-92291f66610b?&org_id=${env.ORG_ID}`;
+  var url = `${env.Loadtest_URL}/v1/reports/teachers/17a28338-3b88-4bac-ab15-cce3887af357?&org_id=${env.ORG_ID}`;
 //  console.log(url);
 
   let res = http.get(url, defaultHeaders);

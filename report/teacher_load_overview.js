@@ -16,7 +16,8 @@ export default function main() {
 }
 
 export function teacherLoadOverview(){
-  let range = dateTimestamp(7) + '-' + env.S_TIME_STAMP;
+//  let range = dateTimestamp(7) + '-' + env.S_TIME_STAMP;
+  let range = '1646841600-1652956011';
 
   var url = `${env.Loadtest_URL}/v1/reports/teacher_load_overview?time_range=${range}&org_id=${env.ORG_ID}`;
 //  console.log(url);
